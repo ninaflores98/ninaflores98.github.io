@@ -1,0 +1,91 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#090909;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(
+        135deg,
+        #050505 0%,
+        #101827 100%
+    );
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#4f8cff;
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:700px;
+    color:#d0d0d0;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.hero button{
+    padding:18px 45px;
+    border:none;
+    border-radius:50px;
+    background:#4f8cff;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#3278ff;
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(79,140,255,.35);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
